@@ -1,4 +1,4 @@
-import type { MenuItem } from "@/../server/types/menu";
+import type { MenuItem } from "@/../features/layout/types/menu";
 
 export function useLayout() {
   const menu = useState<MenuItem[] | null>("layout-menu", () => []);

@@ -1,4 +1,4 @@
-import { postService } from "@/../server/features/posts/posts.service";
+import { postService } from "@/../features/posts/services/posts.service";
 
 export default cachedEventHandler(
   async () => {

@@ -1,5 +1,5 @@
-import { http } from '@/../server/features/shared/http-client'
-import type { Album } from './album'
+import { http } from '@/../server/shared/http-client'
+import type { Album } from '@/../features/albums/types/album'
 
 export const albumService = {
   getAll: async (): Promise<Album[]> => {

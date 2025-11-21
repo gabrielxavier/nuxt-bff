@@ -1,4 +1,4 @@
-import { albumService } from "@/../server/features/albums/albums.service";
+import { albumService } from "@/../features/albums/services/albums.service";
 
 export default cachedEventHandler(
   async () => {

@@ -1,5 +1,5 @@
-import { http } from '@/../server/features/shared/http-client'
-import type { User } from './user'
+import { http } from '@/../server/shared/http-client'
+import type { User } from '@/../features/users/types/user'
 
 export const userService = {
   getAll: async (): Promise<User[]> => {

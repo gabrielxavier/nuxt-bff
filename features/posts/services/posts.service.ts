@@ -1,5 +1,5 @@
-import { http } from '@/../server/features/shared/http-client'
-import type { Post, PostsFilters } from './post'
+import { http } from '@/../server/shared/http-client'
+import type { Post, PostsFilters } from '@/../features/posts/types/post'
 
 export const postService = {
   getAll: async (filters?: PostsFilters): Promise<Post[]> => {
