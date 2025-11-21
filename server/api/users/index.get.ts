@@ -1,6 +1,11 @@
-import { defineEventHandler } from 'h3'
-import { userService } from '@/../server/services/users.service'
+import { userService } from "@/../server/services/users.service";
 
-export default defineEventHandler(async () => {
-    return await userService.getAll()
-})
+export default cachedEventHandler(
+  async () => {
+    return await userService.getAll();
+  },
+  {
+    maxAge: 60 * 60,
+    swr: true,
+  }
+);
