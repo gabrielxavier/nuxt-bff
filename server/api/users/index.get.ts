@@ -1,4 +1,4 @@
-import { userService } from "@/../server/services/users.service";
+import { userService } from "@/../server/features/users/users.service";
 
 export default cachedEventHandler(
   async () => {
