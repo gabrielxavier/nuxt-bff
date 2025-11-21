@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Post } from "@/../server/types/post";
+import type { Post } from "@/../server/features/posts/post";
 const route = useRoute()
 
 const { data: post } = await useFetch<Post>(`/api/posts/${route.params.id}`);

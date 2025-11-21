@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import type { User } from "@/../server/types/user";
+import type { User } from "@/../server/features/users/user";
 
 const { data: users } = await useFetch<User[]>("/api/users");
 </script>

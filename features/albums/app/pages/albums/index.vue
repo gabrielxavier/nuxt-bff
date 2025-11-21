@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Album } from "@/../server/types/album";
+import type { Album } from "@/../server/features/albums/album";
 
 const { data: albums } = await useFetch<Album[]>("/api/albums");
 </script>

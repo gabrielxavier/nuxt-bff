@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Post } from "@/../server/types/post";
+import type { Post } from "@/../server/features/posts/post";
 
 const { data: posts } = await useFetch<Post[]>("/api/posts");
 </script>

@@ -3,6 +3,12 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
+  extends: [
+    './features/layout',
+    './features/albums',
+    './features/posts',
+    './features/users',
+  ],
   devtools: { enabled: true },
   css: ["./app/assets/css/main.css"],
   vite: {
