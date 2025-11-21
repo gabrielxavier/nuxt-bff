@@ -17,4 +17,12 @@ export default defineNuxtConfig({
       apiBaseUrlPlaceholder: "https://jsonplaceholder.typicode.com",
     },
   },
+  nitro: {
+    routeRules: {
+      '/': { prerender: true },
+      '/posts/**': { isr: 120 },
+      '/albums': { ssr: false },
+      '/users/**': { swr: true }, // igual a ISR
+    }
+  }
 });
