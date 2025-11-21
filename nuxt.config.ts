@@ -21,8 +21,8 @@ export default defineNuxtConfig({
     routeRules: {
       '/': { prerender: true },
       '/posts/**': { isr: 120 },
-      '/albums': { ssr: false },
-      '/users/**': { swr: true }, // igual a ISR
+      '/albums': { isr: 3600 },
+      '/users/**': { ssr: true },
     }
   }
 });
