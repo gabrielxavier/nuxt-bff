@@ -19,9 +19,12 @@
             </ul>
             </div>
         </nav>
+        <SpeedInsights />
     </div>
 </template>
 
 <script setup lang="ts">
+import { SpeedInsights } from '@vercel/speed-insights/vue';
+
 const { menu, footer } = useLayout()
 </script>
